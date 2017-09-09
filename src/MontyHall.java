@@ -16,12 +16,13 @@ public class MontyHall {
             outcomesWithoutSwitching[i] = montyHall.playGame(doors, false);
         }
 
-        System.out.println("Running " + tests + " simulations with " + doors + " doors.");
-        System.out.println("Percent of times won with switching = " + percentTrue(outcomesWithSwitching));
-        System.out.println("Percent of times won without switching = " + percentTrue(outcomesWithoutSwitching));
+        System.out.printf("Running %d simulations with %d doors.\n", doors, tests);
+        System.out.printf("Proportion of times won with switching = %f\n", proportionTrue(outcomesWithSwitching));
+        System.out.printf("Proportion of times won without switching = %f\n", proportionTrue(outcomesWithoutSwitching));
+
     }
 
-    public static double percentTrue(boolean[] list) {
+    public static double proportionTrue(boolean[] list) {
         double nTotal = list.length;
         double nTrue = 0;
 
