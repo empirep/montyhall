@@ -4,7 +4,7 @@ public class MontyHall {
 
     public static void main(String[] args) {
         final int doors = 3;
-        final int tests = 4;
+        final int tests = 1000000;
 
         boolean[] outcomesWithSwitching = new boolean[tests];
         boolean[] outcomesWithoutSwitching = new boolean[tests];

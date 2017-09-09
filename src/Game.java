@@ -1,6 +1,6 @@
-import java.util.Random;
-
 package montyhallproblem;
+
+import java.util.Random;
 
 public class Game {
     private Random random = new Random();
